@@ -1,0 +1,43 @@
+POST /items/users
+
+{
+  "fullname": "duno",
+  "phone": "012312321",
+  "email": "testx",
+}
+
+will return 
+
+{
+    "data": {
+        "id": 12,
+        "date_created": "2021-05-25T23:15:27+07:00",
+        "date_updated": null,
+        "fullname": "duno",
+        "phone": "012312321",
+        "email": "testx",
+        "address": null,
+    }
+}
+
+POST /items/educations
+[
+  {
+    "school": "Binus",
+    "major": "computer science",
+    "user_id": 12 
+  },
+    {
+    "school": "itb",
+    "major": "computer science",
+    "user_id": 12
+  },
+]
+POST /items/experience
+[
+  {
+    "company": "tokopedia",
+    "title": "computer science",
+    "user_id": 12 
+  }
+]
